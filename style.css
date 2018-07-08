@@ -10,12 +10,6 @@ html, body {
 	padding: 0;
 }
 
-#main-head {
-	/*padding-left: 3vw;*/
-	font-weight: 700;
-	text-align: center;
-}
-
 header {
 	font-size: 3rem;
 }
@@ -41,8 +35,35 @@ h3 {
   padding-right: 0.5em;
 }
 
+/* ------------------- the meat -------------*/
+
+body {
+	/*display: flex;*/
+	/*flex-wrap: nowrap;*/
+	/*justify-content: space-between;*/
+	max-width: 1070px;
+	margin: 0 3vw;
+}
+
+#navbar {
+  max-width: 720px;
+  margin: auto;
+  padding-bottom: 2vw;
+  text-align: center;
+  /*position: fixed;*/
+  /*top: 5px;*/
+  /*min-width: 30vw;*/
+}
+
+#nav-head {
+	/*padding-left: 3vw;*/
+	font-weight: 700;
+	text-align: center;
+	padding-bottom: 2vh;
+}
+
 .nav-link {
-	display: block;
+	display: inline-block;
 	font-size: 1.5rem;
 	text-decoration: none;
 	color: #000;
@@ -53,17 +74,24 @@ h3 {
 	background-color: #b0e0e6;
 }
 
-body {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	max-width: 1070px;
+#main-doc {
+	max-width: 780px;
+	/*margin-right: 5vw;*/
+	margin: auto;
 }
 
-.navbar {
-  position: fixed;
-  top: 5px;
-  min-width: 30vw;
+/* ----------------- wide screen spec ----------------- */
+
+@media {
+	
+}
+
+
+/* --------------- end wide screen spec ----------------- */
+
+ol li {
+	font-size: 1.5rem;
+	margin-left: 3em;
 }
 
 .codeblock {
@@ -72,21 +100,6 @@ body {
 	font-size: 1.5rem;
   padding: 0.5em;
 	margin-bottom: 0.75em;
-}
-
-#main-doc {
-	max-width: 780px;
-	margin-right: 5vw;
-}
-
-ul {
-	list-style: none;
-	margin-left: 3vw;
-}
-
-ol li {
-	font-size: 1.5rem;
-	margin-left: 3em;
 }
 
 .last {
