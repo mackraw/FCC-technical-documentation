@@ -50,7 +50,6 @@ body {
 }
 
 #nav-head {
-	/*padding-left: 3vw;*/
 	font-weight: 700;
 	text-align: center;
 	padding-bottom: 2vh;
@@ -70,7 +69,6 @@ body {
 
 #main-doc {
 	max-width: 780px;
-	/*margin-right: 5vw;*/
 	margin: auto;
 }
 
@@ -91,7 +89,6 @@ body {
   	margin-left: 28vw;
   }
 }
-
 
 /* --------------- end wide screen ----------------- */
 
