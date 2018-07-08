@@ -38,9 +38,6 @@ h3 {
 /* ------------------- the meat -------------*/
 
 body {
-	/*display: flex;*/
-	/*flex-wrap: nowrap;*/
-	/*justify-content: space-between;*/
 	max-width: 1070px;
 	margin: 0 3vw;
 }
@@ -48,11 +45,8 @@ body {
 #navbar {
   max-width: 720px;
   margin: auto;
-  padding-bottom: 2vw;
+  padding: 0 2vw 2vw 0;
   text-align: center;
-  /*position: fixed;*/
-  /*top: 5px;*/
-  /*min-width: 30vw;*/
 }
 
 #nav-head {
@@ -80,14 +74,26 @@ body {
 	margin: auto;
 }
 
-/* ----------------- wide screen spec ----------------- */
+/* ----------------- wide screen ----------------- */
 
-@media {
-	
+@media only screen and (min-width: 660px) {
+	#navbar {
+		width: 25vw;
+		margin: 0 auto;
+		position: fixed;
+	}
+
+  .nav-link {
+  	display: block;
+  }
+
+  #main-doc {
+  	margin-left: 28vw;
+  }
 }
 
 
-/* --------------- end wide screen spec ----------------- */
+/* --------------- end wide screen ----------------- */
 
 ol li {
 	font-size: 1.5rem;
